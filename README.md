@@ -13,7 +13,7 @@ sudo ./start-container.sh
 #### El comando anterior ejecuto de la siguiente manera:
 
 ```
-
+sudo docker ps -a
 sudo docker rm container(borrar c/u)
 sudo docker pull uracilo/hadoop (descarga)
 sudo docker images 
@@ -52,15 +52,7 @@ root@hadoop-master:~#
 ```
 ./start-hadoop.sh
 ```
-#### El comando anterior ejecuto de la siguiente manera:
 
-```
-sudo docker stop hadoop-slave2
-sudo docker rm hadoop-slave2
-
-chmod 777 start-hadoop.sh
-./start-hadoop.sh
-```
 ##### 4. Un archivo txt de un libro
 
 ```
