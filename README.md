@@ -4,11 +4,36 @@
 sudo docker network create --driver=bridge hadoop
 ```
 
-##### 2. Inicializar el cluster
+##### 2. Inicializar el cluster 
 
 ```
-cd DS-M4-Cluster_Hadoop
-sudo ./start-container.sh
+cd DS-M4-Cluster_Hadoop 
+sudo ./start-container.sh 
+```
+#### El comando anterior ejecuto de la siguiente manera:
+
+```
+
+sudo docker rm container(borrar c/u)
+sudo docker pull uracilo/hadoop (descarga)
+sudo docker images 
+sudo docker network create --driver=bridge hadoop
+
+(mofificacion de start-container)
+
+ejecutar:
+sudo chmod 666 start-container.sh
+sudo sh start-container
+
+
+  
+```
+#### detalles:
+```
+ls -ll (lista los directorios o archivos)
+1-nano o 2-vi (editores)
+en windows los script son .bath
+
 ```
 
 **output:**
@@ -27,7 +52,15 @@ root@hadoop-master:~#
 ```
 ./start-hadoop.sh
 ```
+#### El comando anterior ejecuto de la siguiente manera:
 
+```
+sudo docker stop hadoop-slave2
+sudo docker rm hadoop-slave2
+
+chmod 777 start-hadoop.sh
+./start-hadoop.sh
+```
 ##### 4. Un archivo txt de un libro
 
 ```
